@@ -156,8 +156,8 @@ I.seeEmailIsFrom('@mysite.com');
 I.seeInEmailSubject('Awesome Proposal!');
 I.seeInEmailBody('To unsubscribe click here');
 I.seeNumberOfEmailAttachments(2);
-I.seeEmailAttachment('Attachment_1.pdf')
-I.seeEmailAttachment('Attachment_2.pdf')
+I.seeEmailAttachment('Attachment_1.pdf'); // Regular expression. Escape special characters like '(' or ')' in filename.
+I.seeEmailAttachment('Attachment_2.pdf');
 ```
 
 > More methods are listed in [helper's API reference](https://github.com/codeceptjs/mailslurp-helper/blob/master/README.md#api)
