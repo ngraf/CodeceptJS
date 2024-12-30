@@ -1095,6 +1095,30 @@ describe('Playwright', function () {
       I.see('Information')
     })
   })
+
+  describe('#clearCookie', () => {
+    it('should clear all cookies', async () => {
+      I.amOnPage('/')
+      I.setCookie({ name: 'test', value: 'test' })
+      const cookiesBeforeClearing = await I.grabCookie()
+      assert.equal(cookiesBeforeClearing.length, 1)
+      I.clearCookie()
+      const cookiesAfterClearing = await I.grabCookie()
+      assert.equal(cookiesAfterClearing.length, 0)
+    })
+
+    it('should clear individual cookie by name', async () => {
+      I.amOnPage('/')
+      I.setCookie({ name: 'test1', value: 'test1' })
+      I.setCookie({ name: 'test2', value: 'test2' })
+
+      const cookiesBeforeClearing = await I.grabCookie()
+      assert.equal(cookiesBeforeClearing.length, 2)
+      I.clearCookie('test1')
+      const cookiesAfterClearing = await I.grabCookie()
+      assert.equal(cookiesAfterClearing.length, 1)
+      assert.equal(cookiesAfterClearing, { name: 'test1', value: 'test1' })
+    })
 })
 
 let remoteBrowser
