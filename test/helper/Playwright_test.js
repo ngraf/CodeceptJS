@@ -1117,7 +1117,7 @@ describe('Playwright', function () {
       I.clearCookie('test1')
       const cookiesAfterClearing = await I.grabCookie()
       assert.equal(cookiesAfterClearing.length, 1)
-      assert.equal(cookiesAfterClearing, { name: 'test1', value: 'test1' })
+      assert.equal(cookiesAfterClearing, { name: 'test2', value: 'test2' })
     })
 })
 
