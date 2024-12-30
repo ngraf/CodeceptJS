@@ -1119,6 +1119,7 @@ describe('Playwright', function () {
       assert.equal(cookiesAfterClearing.length, 1)
       assert.equal(cookiesAfterClearing, { name: 'test2', value: 'test2' })
     })
+  })
 })
 
 let remoteBrowser
