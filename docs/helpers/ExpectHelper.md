@@ -31,33 +31,33 @@ Zero-configuration when paired with other helpers like REST, Playwright:
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `aboveThan` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `aboveThan` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectBelow
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `belowThan` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `belowThan` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectContain
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValueToContain` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValueToContain` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectDeepEqual
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectDeepEqualExcluding
 
@@ -65,10 +65,10 @@ expects members of two JSON objects are deeply equal excluding some properties
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `fieldsToExclude` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `fieldsToExclude` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectDeepIncludeMembers
 
@@ -76,9 +76,9 @@ expects an array to be a superset of another array
 
 #### Parameters
 
-*   `superset` **any**&#x20;
-*   `set` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `superset` **any**&#x20;
+- `set` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectDeepMembers
 
@@ -86,104 +86,104 @@ expects members of two arrays are deeply equal
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectEmpty
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectEndsWith
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValueToEndWith` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValueToEndWith` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectEqual
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectEqualIgnoreCase
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectFalse
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectHasAProperty
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `propertyName` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `propertyName` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectHasProperty
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `propertyName` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `propertyName` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectJsonSchema
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `jsonSchema` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `jsonSchema` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectJsonSchemaUsingAJV
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `jsonSchema` **any**&#x20;
-*   `customErrorMsg` **any?**  
-*   `ajvOptions` **any?** Pass AJV options 
+- `targetData` **any**&#x20;
+- `jsonSchema` **any**&#x20;
+- `customErrorMsg` **any?**
+- `ajvOptions` **any?** Pass AJV options
 
 ### expectLengthAboveThan
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `lengthAboveThan` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `lengthAboveThan` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectLengthBelowThan
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `lengthBelowThan` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `lengthBelowThan` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectLengthOf
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `length` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `length` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectMatchesPattern
 
@@ -191,85 +191,85 @@ expects a JSON object matches a provided pattern
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedPattern` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedPattern` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectMatchRegex
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `regex` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `regex` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectNotContain
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValueToNotContain` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValueToNotContain` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectNotDeepEqual
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectNotEndsWith
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValueToNotEndWith` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValueToNotEndWith` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectNotEqual
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValue` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValue` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectNotStartsWith
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValueToNotStartWith` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValueToNotStartWith` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectStartsWith
 
 #### Parameters
 
-*   `actualValue` **any**&#x20;
-*   `expectedValueToStartWith` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `actualValue` **any**&#x20;
+- `expectedValueToStartWith` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectToBeA
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `type` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `type` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectToBeAn
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `type` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `type` **any**&#x20;
+- `customErrorMsg` **any?**
 
 ### expectTrue
 
 #### Parameters
 
-*   `targetData` **any**&#x20;
-*   `customErrorMsg` **any?**  
+- `targetData` **any**&#x20;
+- `customErrorMsg` **any?**

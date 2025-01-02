@@ -1,9 +1,7 @@
 // const Helper = require('../../lib/helper');
 
 class CustomHelper extends Helper {
-  shouldDoSomething(s) {
-
-  }
+  shouldDoSomething(s) {}
 
   fail() {
     throw new Error('Failed from helper');

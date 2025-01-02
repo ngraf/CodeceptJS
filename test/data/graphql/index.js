@@ -1,6 +1,7 @@
 const path = require('path');
 const jsonServer = require('json-server');
-const { ApolloServer } = require('apollo-server-express');
+const { ApolloServer } = require('@apollo/server');
+const { startStandaloneServer } = require('@apollo/server/standalone');
 const { resolvers, typeDefs } = require('./schema');
 
 const TestHelper = require('../../support/TestHelper');
@@ -17,9 +18,9 @@ const server = new ApolloServer({
   playground: true,
 });
 
-server.start().then(() => {
-  server.applyMiddleware({ app });
-  app.use(middleware);
-  app.use(router);
-  module.exports = app.listen(PORT, () => console.log(`test graphQL server listening on port ${PORT}...`));
+const res = startStandaloneServer(server, { listen: { port: PORT } });
+res.then(({ url }) => {
+  console.log(`test graphQL server listening on ${url}...`);
 });
+
+module.exports = res;

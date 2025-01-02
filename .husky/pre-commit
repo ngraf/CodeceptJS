@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npm run prettier && npm run lint && npm run dtslint
+prettier $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --write --ignore-unknown
+git update-index --again
+npx eslint $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
+npm run dtslint

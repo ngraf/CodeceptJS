@@ -1,11 +1,11 @@
 # Download Playwright and its dependencies
-FROM mcr.microsoft.com/playwright:v1.39.0
+FROM mcr.microsoft.com/playwright:v1.48.1-noble
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Installing the pre-required packages and libraries
 RUN apt-get update && \
-      apt-get install -y libgtk2.0-0 libgconf-2-4 \
-      libasound2 libxtst6 libxss1 libnss3 xvfb
+      apt-get install -y libgtk2.0-0 \
+      libxtst6 libxss1 libnss3 xvfb
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
@@ -29,7 +29,7 @@ RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
 COPY . /codecept
 
 RUN chown -R pptruser:pptruser /codecept
-RUN runuser -l pptruser -c 'npm i --force --loglevel=warn --prefix /codecept'
+RUN runuser -l pptruser -c 'npm i --loglevel=warn --prefix /codecept'
 
 RUN ln -s /codecept/bin/codecept.js /usr/local/bin/codeceptjs
 RUN mkdir /tests

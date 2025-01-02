@@ -1,7 +1,7 @@
 Feature('Test scenario types');
 
 Scenario('Simple test', () => {
-  console.log('It\'s usual test');
+  console.log("It's usual test");
 });
 
 Scenario('Simple async/await test', async ({ I }) => {

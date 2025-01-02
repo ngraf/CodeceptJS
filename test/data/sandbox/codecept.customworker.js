@@ -7,6 +7,9 @@ exports.config = {
     Workers: {
       require: './workers_helper',
     },
+    CustomWorkers: {
+      require: './custom_worker_helper',
+    },
   },
   include: {},
   bootstrap: async () => {
